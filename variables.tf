@@ -2,12 +2,17 @@
 # SPDX-License-Identifier: MIT-0
 
 # --- root/variables.tf ---
+## Profile
+variable "aws_profile" {
+  type = string
+  description = "AWS Profile"
+}
 
 # AWS REGION
 variable "aws_region" {
   type        = string
   description = "AWS Region to create the environment."
-  default     = "eu-west-2"
+  default     = "eu-west-1"
 }
 
 # PROJECT IDENTIFIER
